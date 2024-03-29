@@ -1,7 +1,11 @@
 body {
   margin: 20px;
-  background: rgb(1, 9, 46);
+  background: rgb(86, 107, 199);
   font-family: sans-serif;
+}
+.style1 {
+  background-image: url("images/bg3.jpg");
+  color: #333;
 }
 *{
   margin: 0;
@@ -10,9 +14,7 @@ body {
   text-decoration: none;
 }
 h1 {
-  background: -webkit-linear-gradient(#02AABD ,#00CDAC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: cyan;
   font-size: 55px;
 }
 h2 {

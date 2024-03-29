@@ -58,9 +58,7 @@ header nav .button:hover{
     filter: brightness(1.05);
 }
 h1 {
-  background: -webkit-linear-gradient(#02AABD ,#00CDAC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: cyan;
   font-size: 55px;
 }
 h2 {
