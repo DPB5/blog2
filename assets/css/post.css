@@ -69,20 +69,6 @@ h3{
   color: white;
   font-size: 20px;
 }
-.btn{
-  border-radius: 7px;
-  background: -webkit-linear-gradient(#02AABD , #00CDAC);
-  transition: 0.5s;
-  border: none;
-  cursor: pointer;
-  box-shadow: 15px 15px 15px black;
-  font-size: 55px;
-}
-.btn:hover{
-  background: -webkit-linear-gradient(#00CDAC , #02AABD);
-  transform: scale(1.5);
-  cursor: pointer;
-}
 .container{
   display: grid;
   width: 80vw;
@@ -94,3 +80,15 @@ h3{
   "bottomLeft bottomLeft";
   border: 20px red;
 }
+.container2{
+  display: grid;
+  width: 80vw;
+  grid-template-columns: 35vw 35vw;
+  grid-template-rows: 45vh 45vh;
+  grid-gap: 25px;
+  grid-template-areas: 
+  "top top"
+  "bottomLeft bottomLeft";
+  border: 20px aqua;
+}
+
