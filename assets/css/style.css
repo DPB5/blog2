@@ -75,6 +75,7 @@ h2 {
   font-size: 30px;
 }
 .box{
+  display: flex;
   width: 50%;
   height: 50%;
   border: 1px solid black;
@@ -84,6 +85,21 @@ h2 {
   box-shadow: 15px 15px 15px black;
 }
 .box:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.box2{
+  display: flex;
+  width: 50%;
+  height: 50%;
+  border: 1px solid rgb(177, 0, 0);
+  border-radius: 10px;
+  background: rgb(0, 0, 0);
+  transition: 0.5s;
+  box-shadow: 15px 15px 15px black;
+  color:white;
+}
+.box2:hover{
   transform: scale(1.2);
   cursor: pointer;
 }
