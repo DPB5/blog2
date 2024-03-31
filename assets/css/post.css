@@ -91,4 +91,17 @@ h3{
   "bottomLeft bottomLeft";
   border: 20px aqua;
 }
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%; 
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+}
 
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .container {
+    width: 70%;  
+  }
+}
