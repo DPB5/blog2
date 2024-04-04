@@ -1,5 +1,6 @@
 @import url("post.css");
 
+/* Global styles */
 body {
   margin: 20px;
   background: rgb(1, 9, 46);
@@ -11,12 +12,12 @@ body {
   padding: 0;
   list-style: none;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 /* Responsive improvements */
-
 img {
-  max-width: 100%; /* Images scale down on small screens */
+  max-width: 100%;
   border-radius: 25px;
   transition: 0.5s;
 }
@@ -26,17 +27,17 @@ header {
   height: 100px;
   border-bottom: solid 1px rgba(16, 16, 16, 0.1);
   font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header nav {
-  float: right;
   height: 100px;
 }
 
 header nav li {
-  display: table;
-  height: 100%;
-  float: left;
+  display: inline-block;
   margin-right: 30px;
 }
 
@@ -44,44 +45,34 @@ header nav li:last-of-type {
   margin-right: 0;
 }
 
-header nav span {
-  display: table-cell;
-  vertical-align: middle;
-}
-
 header nav a {
   color: white;
-}
-
-header nav .button {
-  background-color: #1ab26b;
-  color: #FFF;
   padding: 10px 20px;
   border-radius: 4px;
+  transition: filter 0.3s ease;
 }
 
-header nav .button:hover {
+header nav a:hover {
   filter: brightness(1.05);
 }
 
 h1 {
   color: cyan;
-  font-size: calc(1.5em + 2vw); /* Example of fluid font size */
+  font-size: calc(1.5em + 2vw);
 }
 
 h2 {
   color: white;
-  font-size: 1.2em;  /* Example of fluid font size */
+  font-size: 1.2em;
 }
 
 .box {
-  display: flex;
   width: 50%;
   height: 50%;
   border: 1px solid black;
   border-radius: 10px;
   background: white;
-  transition: 0.5s;
+  transition: transform 0.5s, box-shadow 0.5s;
   box-shadow: 15px 15px 15px black;
 }
 
@@ -91,13 +82,12 @@ h2 {
 }
 
 .box2 {
-  display: flex;
   width: 50%;
   height: 50%;
   border: 1px solid rgb(177, 0, 0);
   border-radius: 10px;
   background: rgb(0, 0, 0);
-  transition: 0.5s;
+  transition: transform 0.5s, box-shadow 0.5s;
   box-shadow: 15px 15px 15px black;
   color: white;
 }
@@ -106,17 +96,31 @@ h2 {
   transform: scale(1.2);
   cursor: pointer;
 }
+
+/* Media Queries */
 @media only screen and (max-width: 600px) {
   .container {
-    width: 100%; 
+    width: 100%;
   }
   h1 {
     font-size: 1.5em;
   }
 }
 
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .container {
-    width: 70%;  
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 50%;
   }
 }
